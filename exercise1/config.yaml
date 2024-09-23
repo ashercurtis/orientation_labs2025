@@ -1,0 +1,27 @@
+# YAML file for configuring a web application
+application:
+  name: MyApp
+  version: 1.0.0
+  description: A sample web application configuration.
+
+server:
+  host: localhost
+  port: 8080
+
+database:
+  type: mysql
+  host: 127.0.0.1
+  port: 3306
+  name: myapp_db
+  username: admin
+  password: secret_password
+
+logging:
+  level: info
+  log_to_file: true
+  file_path: /var/log/myapp.log
+
+features:
+  authentication: true
+  notifications: false
+  multi_language_support: true
